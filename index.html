@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <section class="nav bg-slate-600 text-white sticky">
+        <div class="nav_container flex">
+            <div class="logo w-[20%] my-1 mx-1">
+                <img src="./images/vercel.svg" alt="" class="w-10 h-10" />
+            </div>
+            <div class="heading_content w-[80%] flex justify-end md:justify-between">
+                <div class="ul mx-3 flex items-center justify-center">
+                    <ul class="hidden md:flex md:space-x-6 text-2xl">
+                        <li class="hover:underline hover:text-green-400 cursor-pointer">
+                            Home
+                        </li>
+                        <li class="hover:underline hover:text-green-400 cursor-pointer">
+                            Product
+                        </li>
+                        <li class="hover:underline hover:text-green-400 cursor-pointer">
+                            About
+                        </li>
+                        <li class="hover:underline hover:text-green-400 cursor-pointer">
+                            Contact
+                        </li>
+                    </ul>
+                </div>
+                <div class="others flex mr-6 space-x-2">
+                    <div class="search my-1">
+                        <img src="./images/search.png" alt="" class="w-8 h-8" />
+                    </div>
+                    <div class="cart my-1">
+                        <img src="./images/cart.png" alt="" class="w-8 h-8" />
+                    </div>
+                    <div class="toogle md:hidden">
+                        <img src="./images/menu.svg" alt="" width="{40}" height="{20}" class="ToggleMenu" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="navElem mx-4 hidden animate-wiggle">
+        <div class="ul overflow-hidden w-[100%] md:h-0">
+            <ul>
+                <li class="hover:underline hover:text-orange-400 cursor-pointer">
+                    Home
+                </li>
+                <li class="hover:underline hover:text-orange-400 cursor-pointer">
+                    Product
+                </li>
+                <li class="hover:underline hover:text-orange-400 cursor-pointer">
+                    About
+                </li>
+                <li class="hover:underline hover:text-orange-400 cursor-pointer">
+                    Contact
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- home -->
+    <section class="home bg-slate-600">
+        <div class="slider flex flex-col-reverse md:flex-row h-auto">
+            <div class="left flex w-[100%] flex-col justify-center text-center md:text-left md:mx-20 md:w-[50%]">
+                <div class="content md:mx-10 my-10">
+                    <div class="head text-white font-bold md:text-5xl text-2xl">
+                        <h1>Modern Interior</h1>
+                        <h1>Design Studio</h1>
+                    </div>
+                    <div class="catch-line">
+                        <p>
+                            Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+                        </p>
+                    </div>
+                </div>
+                <div class="btn-container flex justify-center items-center md:block">
+                    <div class="btn w-44 md:w-[60%] md:mx-10 grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 text-3xl gap-5">
+                        <button class="Shop h-[4rem] w-44 bg-yellow-600 rounded-[35px]">
+                Shop
+              </button>
+                        <button class="Explore h-[4rem] w-44 rounded-[35px] text-white border-white border-[2px]">
+                Explore
+              </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right md:block md:my-10">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="./images/product-2.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/product-3.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/product-2.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+        <path
+          class="border-hidden"
+          fill="#fff"
+          fillOpacity="1"
+          d="M0,96L48,101.3C96,107,192,117,288,154.7C384,192,480,256,576,266.7C672,277,768,235,864,218.7C960,203,1056,213,1152,197.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- produtc -->
+    <section class="Popular_product block space-y-6">
+        <div class="heading text-center font-bold text-3xl underline underline-offset-1">
+            <h1>Some Trending Products View</h1>
+        </div>
+
+        <div class="container flex justify-center items-center">
+            <div class="Popular_product_container w-[80%] my-10">
+                <div class="row grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-1">
+                    <div class="col">
+                        <div class="head font-bold text-3xl">
+                            <h1>Crafted with</h1>
+                            <h1>excellent</h1>
+                            <h1>material.</h1>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+                            </p>
+                        </div>
+                        <div class="btn my-4 w-32 h-14 rounded-[13px] bg-blue-600 flex justify-center items-center text-2xl">
+                            Explore
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="container rounded-[10px] hover:bg-slate-200 duration-500 ease-in-out cursor-pointer">
+                            <div class="img h-[70%]">
+                                <img class="hover:-translate-y-10 duration-500 ease-in-out" src="./images/product-3.png" alt="" />
+                            </div>
+                            <div class="info h-[30%]">
+                                <div class="title flex justify-center items-center">
+                                    <h1 class="font-bold text-lg">head</h1>
+                                </div>
+                                <div class="priceTag flex justify-center items-center">
+                                    <div class="currencyLogo font-bold">$</div>
+                                    <div class="price font-bold">500</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container rounded-[10px] hover:bg-slate-200 duration-500 ease-in-out cursor-pointer">
+                            <div class="img h-[70%]">
+                                <img class="hover:-translate-y-10 duration-500 ease-in-out" src="./images/product-2.png" alt="" />
+                            </div>
+                            <div class="info h-[30%]">
+                                <div class="title flex justify-center items-center">
+                                    <h1 class="font-bold text-lg">head</h1>
+                                </div>
+                                <div class="priceTag flex justify-center items-center">
+                                    <div class="currencyLogo font-bold">$</div>
+                                    <div class="price font-bold">500</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container rounded-[10px] hover:bg-slate-200 duration-500 ease-in-out cursor-pointer">
+                            <div class="img h-[70%]">
+                                <img class="hover:-translate-y-10 duration-500 ease-in-out" src="./images/product-2.png" alt="" />
+                            </div>
+                            <div class="info h-[30%]">
+                                <div class="title flex justify-center items-center">
+                                    <h1 class="font-bold text-lg">head</h1>
+                                </div>
+                                <div class="priceTag flex justify-center items-center">
+                                    <div class="currencyLogo font-bold">$</div>
+                                    <div class="price font-bold">500</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- art_collection -->
+    <section class="Art_collection flex justify-center items-center my-14">
+        <div class="w-[80%] container block">
+            <div class="heading md:flex justify-between block text-center">
+                <div class="title text-2xl font-bold">
+                    World Best vintage Hand Made Art Collection
+                </div>
+                <div class="Collection_No flex space-x-2 justify-center">
+                    <h1 class="Art_Collection_Num">50</h1>
+                    <p>Collection in this Art row</p>
+                </div>
+            </div>
+            <hr />
+            <div class="sign text-center text-xl font-bold my-10">
+                <p>More👉.....</p>
+            </div>
+            <div class="Art_Cards my-14 flex justify-center items-center space-x-5">
+                <div class="previous w-[6.5rem] h-10 rounded-full bg-slate-500 hidden md:flex justify-center items-center font-bold text-3xl text-white">
+                    <h1>←</h1>
+                </div>
+
+                <div class="row_container overflow-x-scroll flex space-x-4">
+                    <div class="list">
+                        <div class="container rounded-[10px] hover:bg-slate-200 duration-500 ease-in-out cursor-pointer">
+                            <div class="img h-[70%]">
+                                <img class="hover:-translate-y-10 duration-500 ease-in-out" src="./images/product-2.png" alt="" />
+                            </div>
+                            <div class="info h-[30%]">
+                                <div class="title flex justify-center items-center">
+                                    <h1 class="font-bold text-lg">head</h1>
+                                </div>
+                                <div class="priceTag flex justify-center items-center">
+                                    <div class="currencyLogo font-bold">$</div>
+                                    <div class="price font-bold">500</div>
+                                </div>
+                                <div class="Buy-btn flex justify-center items-center">
+                                    <button class="cart rounded-lg bg-blue-700 w-[80%] font-bold text-white h-10 hover:scale-110 duration-500 ease-in-out">
+                      Buy
+                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- {/* list-2 */} -->
+                    <div class="list">
+                        <div class="container rounded-[10px] hover:bg-slate-200 duration-500 ease-in-out cursor-pointer">
+                            <div class="img h-[70%]">
+                                <img class="hover:-translate-y-10 duration-500 ease-in-out" src="./images/product-2.png" alt="" />
+                            </div>
+                            <div class="info h-[30%]">
+                                <div class="title flex justify-center items-center">
+                                    <h1 class="font-bold text-lg">head</h1>
+                                </div>
+                                <div class="priceTag flex justify-center items-center">
+                                    <div class="currencyLogo font-bold">$</div>
+                                    <div class="price font-bold">500</div>
+                                </div>
+                                <div class="Buy-btn flex justify-center items-center">
+                                    <button class="cart rounded-lg bg-blue-700 w-[80%] font-bold text-white h-10 hover:scale-110 duration-500 ease-in-out">
+                      Buy
+                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- {/* list-3 */} -->
+                    <div class="list">
+                        <div class="container rounded-[10px] hover:bg-slate-200 duration-500 ease-in-out cursor-pointer">
+                            <div class="img h-[70%]">
+                                <img class="hover:-translate-y-10 duration-500 ease-in-out" src="./images/product-2.png" alt="" />
+                            </div>
+                            <div class="info h-[30%]">
+                                <div class="title flex justify-center items-center">
+                                    <h1 class="font-bold text-lg">head</h1>
+                                </div>
+                                <div class="priceTag flex justify-center items-center">
+                                    <div class="currencyLogo font-bold">$</div>
+                                    <div class="price font-bold">500</div>
+                                </div>
+                                <div class="Buy-btn flex justify-center items-center">
+                                    <button class="cart rounded-lg bg-blue-700 w-[80%] font-bold text-white h-10 hover:scale-110 duration-500 ease-in-out">
+                      Buy
+                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- {/* list-4 */} -->
+                    <div class="list">
+                        <div class="container rounded-[10px] hover:bg-slate-200 duration-500 ease-in-out cursor-pointer">
+                            <div class="img h-[70%]">
+                                <img class="hover:-translate-y-10 duration-500 ease-in-out" src="./images/product-2.png" alt="" />
+                            </div>
+                            <div class="info h-[30%]">
+                                <div class="title flex justify-center items-center">
+                                    <h1 class="font-bold text-lg">head</h1>
+                                </div>
+                                <div class="priceTag flex justify-center items-center">
+                                    <div class="currencyLogo font-bold">$</div>
+                                    <div class="price font-bold">500</div>
+                                </div>
+                                <div class="Buy-btn flex justify-center items-center">
+                                    <button class="cart rounded-lg bg-blue-700 w-[80%] font-bold text-white h-10 hover:scale-110 duration-500 ease-in-out">
+                      Buy
+                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- {/* list-5 */} -->
+                    <div class="list">
+                        <div class="container rounded-[10px] hover:bg-slate-200 duration-500 ease-in-out cursor-pointer">
+                            <div class="img h-[70%]">
+                                <img class="hover:-translate-y-10 duration-500 ease-in-out" src="./images/product-2.png" alt="" />
+                            </div>
+                            <div class="info h-[30%]">
+                                <div class="title flex justify-center items-center">
+                                    <h1 class="font-bold text-lg">head</h1>
+                                </div>
+                                <div class="priceTag flex justify-center items-center">
+                                    <div class="currencyLogo font-bold">$</div>
+                                    <div class="price font-bold">500</div>
+                                </div>
+                                <div class="Buy-btn flex justify-center items-center">
+                                    <button class="cart rounded-lg bg-blue-700 w-[80%] font-bold text-white h-10 hover:scale-110 duration-500 ease-in-out">
+                      Buy
+                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- {/* next */} -->
+                <div class="next hidden w-[6.5rem] h-10 rounded-full bg-slate-500 md:flex justify-center items-center font-bold text-3xl text-white">
+                    <h1>→</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Diary_collection -->
+    <section class="Diary_collection flex justify-center items-center my-14">
+        <div class="w-[80%] container block">
+            <div class="heading md:flex justify-between block text-center">
+                <div class="title text-2xl font-bold">
+                    World Best vintage Dairy Collection
+                </div>
+                <div class="Collection_No flex space-x-2 justify-center">
+                    <h1 class="Art_Collection_Num">50</h1>
+                    <p>Collection in this Art row</p>
+                </div>
+            </div>
+            <hr />
+            <div class="sign text-center text-xl font-bold my-10">
+                <p>More👉.....</p>
+            </div>
+            <div class="Art_Cards my-14 flex justify-center items-center space-x-5">
+                <div class="previous w-[6.5rem] h-10 rounded-full bg-slate-500 hidden md:flex justify-center items-center font-bold text-3xl text-white">
+                    <h1>←</h1>
+                </div>
+
+                <div class="row_container overflow-x-scroll flex space-x-4">
+                    <div class="list">
+                        <div class="container rounded-[10px] hover:bg-slate-200 duration-500 ease-in-out cursor-pointer">
+                            <div class="img h-[70%]">
+                                <img class="hover:-translate-y-10 duration-500 ease-in-out" src="./images/product-2.png" alt="" />
+                            </div>
+                            <div class="info h-[30%]">
+                                <div class="title flex justify-center items-center">
+                                    <h1 class="font-bold text-lg">head</h1>
+                                </div>
+                                <div class="priceTag flex justify-center items-center">
+                                    <div class="currencyLogo font-bold">$</div>
+                                    <div class="price font-bold">500</div>
+                                </div>
+                                <div class="Buy-btn flex justify-center items-center">
+                                    <button class="cart rounded-lg bg-blue-700 w-[80%] font-bold text-white h-10 hover:scale-110 duration-500 ease-in-out">
+                      Buy
+                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- {/* list-2 */} -->
+                    <div class="list">
+                        <div class="container rounded-[10px] hover:bg-slate-200 duration-500 ease-in-out cursor-pointer">
+                            <div class="img h-[70%]">
+                                <img class="hover:-translate-y-10 duration-500 ease-in-out" src="./images/product-2.png" alt="" />
+                            </div>
+                            <div class="info h-[30%]">
+                                <div class="title flex justify-center items-center">
+                                    <h1 class="font-bold text-lg">head</h1>
+                                </div>
+                                <div class="priceTag flex justify-center items-center">
+                                    <div class="currencyLogo font-bold">$</div>
+                                    <div class="price font-bold">500</div>
+                                </div>
+                                <div class="Buy-btn flex justify-center items-center">
+                                    <button class="cart rounded-lg bg-blue-700 w-[80%] font-bold text-white h-10 hover:scale-110 duration-500 ease-in-out">
+                      Buy
+                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- {/* list-3 */} -->
+                    <div class="list">
+                        <div class="container rounded-[10px] hover:bg-slate-200 duration-500 ease-in-out cursor-pointer">
+                            <div class="img h-[70%]">
+                                <img class="hover:-translate-y-10 duration-500 ease-in-out" src="./images/product-2.png" alt="" />
+                            </div>
+                            <div class="info h-[30%]">
+                                <div class="title flex justify-center items-center">
+                                    <h1 class="font-bold text-lg">head</h1>
+                                </div>
+                                <div class="priceTag flex justify-center items-center">
+                                    <div class="currencyLogo font-bold">$</div>
+                                    <div class="price font-bold">500</div>
+                                </div>
+                                <div class="Buy-btn flex justify-center items-center">
+                                    <button class="cart rounded-lg bg-blue-700 w-[80%] font-bold text-white h-10 hover:scale-110 duration-500 ease-in-out">
+                      Buy
+                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- {/* list-4 */} -->
+                    <div class="list">
+                        <div class="container rounded-[10px] hover:bg-slate-200 duration-500 ease-in-out cursor-pointer">
+                            <div class="img h-[70%]">
+                                <img class="hover:-translate-y-10 duration-500 ease-in-out" src="./images/product-2.png" alt="" />
+                            </div>
+                            <div class="info h-[30%]">
+                                <div class="title flex justify-center items-center">
+                                    <h1 class="font-bold text-lg">head</h1>
+                                </div>
+                                <div class="priceTag flex justify-center items-center">
+                                    <div class="currencyLogo font-bold">$</div>
+                                    <div class="price font-bold">500</div>
+                                </div>
+                                <div class="Buy-btn flex justify-center items-center">
+                                    <button class="cart rounded-lg bg-blue-700 w-[80%] font-bold text-white h-10 hover:scale-110 duration-500 ease-in-out">
+                      Buy
+                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- {/* list-5 */} -->
+                    <div class="list">
+                        <div class="container rounded-[10px] hover:bg-slate-200 duration-500 ease-in-out cursor-pointer">
+                            <div class="img h-[70%]">
+                                <img class="hover:-translate-y-10 duration-500 ease-in-out" src="./images/product-2.png" alt="" />
+                            </div>
+                            <div class="info h-[30%]">
+                                <div class="title flex justify-center items-center">
+                                    <h1 class="font-bold text-lg">head</h1>
+                                </div>
+                                <div class="priceTag flex justify-center items-center">
+                                    <div class="currencyLogo font-bold">$</div>
+                                    <div class="price font-bold">500</div>
+                                </div>
+                                <div class="Buy-btn flex justify-center items-center">
+                                    <button class="cart rounded-lg bg-blue-700 w-[80%] font-bold text-white h-10 hover:scale-110 duration-500 ease-in-out">
+                      Buy
+                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- {/* next */} -->
+                <div class="next hidden w-[6.5rem] h-10 rounded-full bg-slate-500 md:flex justify-center items-center font-bold text-3xl text-white">
+                    <h1>→</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact_container -->
+    <section class="contact space-y-10 bg-slate-100 mb-10">
+        <div class="heading flex justify-center items-center font-bold text-4xl text-slate-700">
+            <h1 class="my-14">Contact Us</h1>
+        </div>
+        <div class="contact_container flex justify-center items-center">
+            <div class="container md:w-[60%] w-[90%] text-sm">
+                <div class="row grid md:grid-cols-3 grid-rows-3 gap-4">
+                    <div class="location flex space-x-4">
+                        <div class="logo bg-green-700 md:w-[20%] w-[15%] flex justify-center items-center rounded-[8px]"></div>
+                        <div class="content flex w-[85%] md:w-[80%]">
+                            <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+                        </div>
+                    </div>
+                    <div class="emailContact flex space-x-4">
+                        <div class="logo bg-green-700 md:w-[20%] w-[15%] flex justify-center items-center rounded-[8px]"></div>
+                        <div class="content flex w-[85%] md:w-[80%]">
+                            <p>info@yourdomain.com</p>
+                        </div>
+                    </div>
+                    <div class="Number flex space-x-4">
+                        <div class="logo bg-green-700 md:w-[20%] w-[15%] flex justify-center items-center rounded-[8px]"></div>
+                        <div class="content flex w-[85%] md:w-[80%]">
+                            <p>info@yourdomain.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form action="submit" class="space-y-1 md:space-y-2">
+                    <div class="namePart grid grid-cols-2 gap-6">
+                        <div class="firstName">
+                            <label htmlFor="First Name" class="text-slate-700 md:text-xl text-sm">First Name</label
+                >
+                <div
+                  class="input border-slate-400 border-[2px] h-14 rounded-lg w-[100%] flex justify-center items-center bg-white"
+                >
+                  <input
+                    type="text"
+                    class="outline-none text-2xl w-[95%] h-[100%]"
+                  />
+                </div>
+              </div>
+              <div class="LastName">
+                <label
+                  htmlFor="last Name"
+                  class="text-slate-700 md:text-xl text-sm"
+                  >Last Name</label
+                >
+                <div
+                  class="input border-slate-400 border-[2px] h-14 rounded-lg w-[100%] flex justify-center items-center bg-white"
+                >
+                  <input
+                    type="text"
+                    class="outline-none text-2xl w-[95%] h-[100%]"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="Email">
+              <label htmlFor="Email" class="text-slate-700 md:text-xl text-sm"
+                >Email</label
+              >
+              <div
+                class="input border-slate-400 border-[2px] h-14 rounded-lg w-[100%] flex justify-center items-center bg-white"
+              >
+                <input
+                  type="text"
+                  class="outline-none text-2xl w-[95%] h-[100%]"
+                />
+              </div>
+            </div>
+            <div class="Message">
+              <label htmlFor="Message" class="text-slate-700 md:text-xl text-sm"
+                >Message</label
+              >
+              <div
+                class="input border-slate-400 border-[2px] h-48 rounded-lg w-[100%] flex justify-center items-center bg-white"
+              >
+                <input
+                  type="text"
+                  class="outline-none text-2xl w-[95%] h-[100%]"
+                />
+              </div>
+            </div>
+            <div
+              class="btn w-28 h-14 flex justify-center items-center bg-slate-800 font-bold text-2xl text-white rounded-md cursor-pointer"
+            >
+              Send
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- footer_area -->
+    <section class="footer flex justify-center items-center bg-[#141d2a]">
+      <div class="footer-container w-[80%]">
+        <div class="feedback flex justify-center items-center">
+          <div
+            class="feedback-area block md:flex justify-between w-[70%] bg-purple-900 space-y-5"
+          >
+            <div class="head mx-10 my-4">
+              <h1 class="font-bold text-xl text-white">
+                Issue regarding Quality and Price
+              </h1>
+              <p class="text-slate-400">Let us know to improve!</p>
+            </div>
+            <button
+              class="btn w-32 h-12 bg-slate-700 md:mr-10 md:my-6 ml-[20%] text-white"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+        <div
+          class="my-10 footer_container grid grid-cols-2 gap-10 md:grid-cols-5"
+        >
+          <div class="col-1 space-y-2 block">
+            <div class="logo"><img src="" alt="" /></div>
+            <p class="text-slate-400">@2023</p>
+          </div>
+          <div class="col-2 space-y-2">
+            <div class="head text-white">
+              <h1>Customers</h1>
+            </div>
+            <ul class="space-y-2">
+              <li class="text-slate-400">Buyer</li>
+              <li class="text-slate-400">Supplier</li>
+            </ul>
+          </div>
+          <div class="col-3 space-y-2">
+            <div class="head text-white">
+              <h1>Company</h1>
+            </div>
+            <ul class="space-y-2">
+              <li class="text-slate-400">About us</li>
+              <li class="text-slate-400">Products</li>
+              <li class="text-slate-400">Contacts</li>
+            </ul>
+          </div>
+          <div class="col-4 space-y-2">
+            <div class="head text-white">
+              <h1>Further Information</h1>
+            </div>
+            <ul class="space-y-2">
+              <li class="text-slate-400">Terms and conditions</li>
+              <li class="text-slate-400">Privacy Policy</li>
+            </ul>
+          </div>
+          <div class="col-5 space-y-2">
+            <div class="head text-white"><h1>Follow Us</h1></div>
+            <div
+              class="site-links md:flex grid grid-cols-3 grid-row-auto md:space-x-1 gap-1 md:gap-0"
+            >
+              <div
+                class="footer_logo md:w-10 md:h-10 w-11 h-11 rounded-full bg-blue-500"
+              >
+                <img src="./images/facebook.png" alt="" />
+              </div>
+              <div
+                class="footer_logo md:w-10 md:h-10 w-11 h-11 rounded-full bg-blue-500"
+              >
+                <img src="./images/instagram.png" alt="" />
+              </div>
+              <div
+                class="footer_logo md:w-10 md:h-10 w-11 h-11 rounded-full bg-blue-500"
+              >
+                <img src="./images/linkedin.png" alt="" />
+              </div>
+              <div
+                class="footer_logo md:w-10 md:h-10 w-11 h-11 rounded-full bg-blue-500"
+              >
+                <img src="./images/search.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+    <script src="swiper.js"></script>
+  </body>
+</html>
